@@ -1,0 +1,120 @@
+.about_ag_wrapper {
+	padding: 100px 80px;
+	@media screen and (max-width: 768px) {
+		padding: 100px 20px;
+	}
+	.about_ag_wrapper__content {
+		padding-right: 40px;
+		.title {
+			color: #84848C;
+			font-family: Oswald,sans-serif;
+
+			font-size: 14px;
+		}
+		.subtitle {
+			margin-top: 17px;
+			margin-bottom: 50px;
+			font-size: 30px;
+			font-family: Oswald,sans-serif;
+
+		}
+		.desc {
+			color: #84848C;
+			font-family: Oswald,sans-serif;
+			letter-spacing: 1px;
+			font-weight: 400;
+			line-height: 25px;
+			margin-bottom: 50px;
+		}
+	}
+	.images {
+		position: relative;	
+		.img1 {
+			box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+			position: absolute;
+			top: -50px;
+			right: 0;
+			background: transparent;
+			height: 100%;
+			overflow: hidden;
+
+			img {
+				min-height: 100%;
+			}
+		}
+		.img2 {
+			position: relative;
+			bottom: -60px;
+			overflow: hidden;
+			img {
+			}
+		}
+		.border {
+			position: absolute;
+			top: 0;
+			bottom: -80px;
+			left: 50%;
+			transform: translateX(-50%);
+			min-width: 80%;
+			min-height: 100%;
+			border: 10px solid #E62B4A;
+		}
+
+	}
+		@media screen and (max-width: 768px) {
+			.images {
+				padding-right: 20px;
+				.img1 {
+					top: 0;
+					right: 0;
+					min-width: 100%;
+					box-shadow: 0;
+					width: 100%;
+					img {
+						min-width: 100px;
+					}
+				}
+				.img2 {
+					top: 100px;
+					width: 100%;
+					img {
+						width: 100%;
+					}
+				}
+				.border {
+					top: 70px;
+					height: 400px;
+				}
+			}
+		}
+		@media screen and (max-width: 500px) {
+			.images {
+				display: flex;
+				flex-direction: column;
+				padding: 0;
+				margin-top: 20px;
+				.img1 {
+					position: static;
+					box-shadow: none;
+					height: 300px;
+					img {
+						min-width: 100%;
+						height: 100%;
+					}
+				}
+				.img2 {
+					position: static;
+					box-shadow: none;
+					height: 300px;
+					img {
+						width: 100%;
+						height: 100%;
+
+					}
+				}
+				.border {
+					display: none;
+				}
+			}
+		}
+}

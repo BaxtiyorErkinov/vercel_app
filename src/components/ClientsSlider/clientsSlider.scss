@@ -1,0 +1,116 @@
+.clients__slider__container{ 
+	padding: 100px 150px;
+	position: relative;
+	background: #F4F4F4;
+
+	.clients__slider__title {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 50px;
+		.title {
+			text-align: center;
+			font-family: Oswald,sans-serif;
+			font-size: 12px;
+			color: #818181;
+		}
+		.subtitle {
+			text-align: center;
+			margin-top: 5px;
+			margin-bottom: 30px;
+			font-family: Oswald,sans-serif;
+			font-size: 40px;
+			font-weight: 500;
+
+		}
+		.desc {
+			width: 50%;
+			text-align: center;
+			font-family: Ubuntu;
+			color: #818181;
+			line-height: 30px;
+		}
+	}
+	.swiper {
+		height: 200px;
+		position: static;
+	}
+	.swiper-slide {
+		min-width: 250px;
+		height: 100%;
+		background: #fff;
+	}
+	.pagination-el {
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items:center;	
+		z-index: 100;
+		.swiper-pagination-bullet {
+			padding: 5px;
+			border-radius: 0px;
+			width: 7px;
+			height: 7px;
+		}
+
+		.swiper-pagination-bullet-active {
+			background: #000 !important;
+			padding: 6px;
+		}
+	}
+	.clients__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		cursor: pointer;
+		img {
+		}
+		.hover-el {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(#F4F4F4, .4);
+			transition: all .3s;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+
+			.el::before {
+				  content: "";
+				  position: absolute;
+				  display: block;
+				  width: 5px;
+				  height: 0;
+				  bottom: 0;
+				  right: 0;
+				  background-color: #E62B4A;
+				  transform: scaleX(0);
+				  transform-origin: top left;
+				  transition: transform 0.3s ease;
+
+			}
+			.el::before {
+ 				 transform: scaleX(1);
+			}
+			&:hover {
+				transition: all .3s;
+				background: transparent;
+			}
+			&:hover	.el::before {
+				transition: all .3s;
+				height: 100%;
+ 				transform: scaleX(1);
+			}
+		}
+	}
+	@media screen and (max-width: 500px) {
+		padding: 100px 20px;
+	}
+}
