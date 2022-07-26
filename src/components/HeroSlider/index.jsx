@@ -44,7 +44,7 @@ const HeroSlider = () => {
           nextEl: navigationNextRef.current,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         fadeEffect={{ crossFade: true }}
@@ -57,7 +57,7 @@ const HeroSlider = () => {
             swiper.navigation.destroy();
             swiper.navigation.init();
             swiper.navigation.update();
-          });
+          }, 500);
         }}
         modules={[EffectFade, Navigation, Autoplay]}
         className="mySwiper">

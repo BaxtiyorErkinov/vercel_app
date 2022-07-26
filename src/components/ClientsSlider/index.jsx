@@ -9,9 +9,8 @@ import Img5 from '../../assets/images/client5.png';
 
 //slider
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, FreeMode } from 'swiper';
+import { Pagination, FreeMode } from 'swiper';
 import 'swiper/scss';
-import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import 'swiper/scss/free-mode';
 
@@ -43,19 +42,10 @@ const ClientsSlider = () => {
           slidesPerView={3}
           spaceBetween={40}
           freeMode={true}
-          autoResize={true}
           pagination={{
             clickable: true,
             el: '.pagination-el',
-            clickable: true,
             bulletClass: 'swiper-pagination-bullet',
-          }}
-          onSwiper={(swiper) => {
-            setTimeout(() => {
-              swiper.navigation.destroy();
-              swiper.navigation.init();
-              swiper.navigation.update();
-            });
           }}
           modules={[Pagination, FreeMode]}
           breakpoints={{

@@ -11,7 +11,7 @@ const Portfolio = ({ data }) => {
     <div className="portfolio__container">
       <Grid container spacing={5}>
         {data.map((item) => (
-          <Grid item md={4} sm={6} xs={12}>
+          <Grid item md={4} sm={6} xs={12} key={item.id}>
             <div className="portfolio__card">
               <div className="img">
                 <img src={item.img} alt="" />

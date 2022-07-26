@@ -1,0 +1,126 @@
+footer {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  .footer_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 150px;
+    padding: 100px 200px;
+    @media screen and (min-width: 1440px) {
+      padding: 100px 400px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 50px 50px;
+      flex-direction: column;
+    }
+    .footer__item {
+      max-width: 30%;
+      @media screen and (max-width: 1440px) {
+        .title {
+          font-size: 14px;
+        }
+        .address {
+          font-size: 10px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        margin: 30px 0;
+      }
+    }
+    .about__section {
+      .logo {
+        margin-bottom: 30px;
+        img {
+        }
+      }
+      .desc {
+        color: #aaaaaa;
+        font-weight: 600;
+        font-family: Oswald, sans-serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        padding-right: 30px;
+
+        @media screen and (max-width: 1440px) {
+          font-size: 10px;
+        }
+      }
+    }
+    .contact__section {
+      .title {
+        color: #fff;
+        font-family: Oswald, sans-serif;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+      }
+      .address {
+        color: #aaaaaa;
+        font-family: Oswald, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        margin-bottom: 20px;
+      }
+      .telNumber {
+        color: #aaaaaa;
+        font-family: Oswald, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 40px;
+      }
+      .email {
+        color: #aaaaaa;
+        font-family: Oswald, sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      @media screen and (max-width: 1440px) {
+        .address {
+          font-size: 10px;
+        }
+        .telNumber {
+          font-size: 10px;
+        }
+        .email {
+          font-size: 10px;
+        }
+      }
+    }
+    .social__section {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        color: #fff;
+        font-family: Oswald, sans-serif;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+      }
+      &__item {
+        line-height: 40px;
+        font-family: Oswald, sans-serif;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: #aaaaaa;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        font-size: 18px;
+        transition: all 0.2s;
+
+        &:hover {
+          transition: all 0.2s;
+          color: #fff;
+        }
+        @media screen and (max-width: 1440px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

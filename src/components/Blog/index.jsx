@@ -8,7 +8,7 @@ const Blog = ({ data }) => {
     <div className="blog__container">
       <Grid container spacing={4}>
         {data.map((item) => (
-          <Grid item md={4} sm={6} xs={12}>
+          <Grid item md={4} sm={6} xs={12} key={item.id}>
             <div className="blog__item">
               <div className="blog__item__image">
                 <img src={item.img} alt="" />

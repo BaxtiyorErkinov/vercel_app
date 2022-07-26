@@ -1,14 +1,16 @@
 import React from 'react';
-import Header from '../components/Header/';
+import Header from './Header/';
 import { Outlet } from 'react-router-dom';
+import Footer from './Footer';
 
 const PageLayout = () => {
   return (
     <>
       <Header />
-      <div className="content" style={{ height: '200vh' }}>
+      <div className="page__content">
         <Outlet />
       </div>
+      <Footer />
     </>
   );
 };
