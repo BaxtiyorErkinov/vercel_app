@@ -1,20 +1,19 @@
 .clients__container {
-	padding: 100px 150px;
-	background: #000;
- 	.clients__status__item {
- 		.count {
- 			color: #fff;
- 			font-size: 25px;
- 			text-align: center;
-			font-family: Oswald,sans-serif;
-
- 		}
- 		.title {
- 			text-align: center;
- 			margin: 10px 0;
- 			color: #aaaaaa;
-			font-family: Oswald,sans-serif;
-			font-size: 14px;
- 		}
- 	}
+  padding: 100px 150px;
+  background: #000;
+  .clients__status__item {
+    .count {
+      color: #fff;
+      font-size: 25px;
+      text-align: center;
+      font-family: Oswald, sans-serif;
+    }
+    .title {
+      text-align: center;
+      margin: 10px 0;
+      color: #aaaaaa;
+      font-family: Oswald, sans-serif;
+      font-size: 14px;
+    }
+  }
 }
