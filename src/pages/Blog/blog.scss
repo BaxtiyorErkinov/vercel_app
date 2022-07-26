@@ -1,0 +1,21 @@
+.blogs__page__container {
+    .blogs__items {
+    	padding: 100px 100px;
+
+	    @media screen and (max-width: 768px) {
+    		padding: 100px 70px;
+	    }
+	    @media screen and (max-width: 500px) {
+	      padding: 100px 40px;
+	    }
+	    @media screen and (min-width: 1440px) {
+	      padding: 100px 250px;
+	    }
+    }
+    .pagination {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	margin-bottom: 50px;
+    }
+}

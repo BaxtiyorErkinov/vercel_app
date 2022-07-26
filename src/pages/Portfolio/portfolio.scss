@@ -1,0 +1,21 @@
+.portfolios__page__container {
+    .portfolios__items {
+    	padding: 100px 150px;
+
+	    @media screen and (max-width: 768px) {
+    		padding: 100px 70px;
+	    }
+	    @media screen and (max-width: 500px) {
+	      padding: 100px 40px;
+	    }
+	    @media screen and (min-width: 1440px) {
+	      padding: 100px 250px;
+	    }
+    }
+    .pagination {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	margin-bottom: 50px;
+    }
+}
