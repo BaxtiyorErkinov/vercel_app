@@ -1,0 +1,79 @@
+.subscribeus {
+  padding: 20px 100px;
+  display: flex;
+  border-bottom: 1px solid #e0dddd;
+  margin-bottom: 30px;
+  justify-content: space-around;
+  column-gap: 50px;
+  align-items: center;
+  .text {
+    .title {
+      font-size: 12px;
+      line-height: 0.8;
+      color: #818181;
+      letter-spacing: 1.2px;
+      margin: 0 0 5px;
+      font-family: Oswald, sans-serif;
+    }
+    .subtitle {
+      font-size: 50px;
+      line-height: 60px;
+      color: #000;
+      letter-spacing: 2px;
+      margin: 0 0 25px;
+      white-space: pre-line;
+      font-family: Oswald, sans-serif;
+    }
+  }
+  .action__field {
+    .field {
+      min-width: 100%;
+      display: flex;
+      input {
+        min-width: 470px;
+        height: 60px;
+        background: #f4f4f4;
+        border: none;
+        padding: 0 15px;
+        outline: none;
+        &::placeholder {
+          color: #aaaaaa;
+          font-weight: 600;
+          font-family: Oswald, sans-serif;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    .action__field {
+      width: 100%;
+      .field {
+        flex-direction: column;
+        input {
+          margin: 10px 0;
+          min-width: 100%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .action__field {
+      width: 100%;
+
+      .field {
+        flex-direction: column;
+        input {
+          min-width: 100%;
+          height: 60px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    padding: 20px 20px;
+  }
+}

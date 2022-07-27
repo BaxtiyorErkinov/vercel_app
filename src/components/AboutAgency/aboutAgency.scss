@@ -1,5 +1,5 @@
 .about_ag_wrapper {
-  padding: 100px 80px;
+  padding: 100px 50px;
   .about_ag_wrapper__content {
     padding-right: 40px;
     .title {
@@ -31,7 +31,7 @@
         rgba(17, 17, 26, 0.1) 0px 24px 80px;
       position: absolute;
       top: -50px;
-      right: 0;
+      right: -30px;
       background: transparent;
       height: 100%;
       overflow: hidden;
@@ -43,6 +43,7 @@
     .img2 {
       position: relative;
       bottom: -60px;
+      left: -30px;
       overflow: hidden;
       img {
       }
@@ -66,6 +67,23 @@
       .img2 {
         bottom: -30px;
         left: 20%;
+      }
+      .border {
+        min-width: 50%;
+        left: 70%;
+        top: -30px;
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .images {
+      .img1 {
+        right: -10px;
+        width: 90%;
+      }
+      .img2 {
+        bottom: -50px;
+        left: -20px;
       }
       .border {
         min-width: 50%;
@@ -133,6 +151,9 @@
     padding: 100px 20px;
   }
   @media screen and (min-width: 1440px) {
-    padding: 100px 200px;
+    padding: 100px 250px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    padding: 100px 70px;
   }
 }
