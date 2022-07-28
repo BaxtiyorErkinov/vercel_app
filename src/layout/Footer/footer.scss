@@ -2,6 +2,8 @@ footer {
   background: #000;
   display: flex;
   justify-content: center;
+  position: relative;
+  margin-top: 100px;
   .footer_wrapper {
     width: 100%;
     display: flex;
@@ -46,7 +48,6 @@ footer {
 
         @media screen and (max-width: 1440px) {
           font-size: 12px;
-
         }
       }
     }

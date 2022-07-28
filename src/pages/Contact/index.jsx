@@ -1,14 +1,19 @@
 import React from 'react';
 
 //components
-import PagesBanner from '../../components/PagesBanner'
+import PagesBanner from '../../components/PagesBanner';
+import WriteMessage from '../../components/WriteMessage';
 
 const Contact = () => {
-	return (
-		<div>
-			<PagesBanner page="HOME - CONTACT" pagetitle="CONTACT US"/>
-		</div>
-	)
-}
+  return (
+    <div>
+      <PagesBanner
+        page="HOME - CONTACT"
+        pagetitle="CONTACT US"
+      />
+      <WriteMessage />
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

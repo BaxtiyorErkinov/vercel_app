@@ -1,87 +1,87 @@
 .MuiPagination-ul {
-	li {
-		button {
-			color: #e62b4a;
-			background: #F4F4F4;
-			border-radius: 3px;
-			border: none;
-			width: 40px;
-			height: 40px;
-			color: #aaaa;
-	        transition: all 0.5s ease;
-			position: relative;
-			&:hover {
-	        	transition: all 0.5s ease;
-				background: #000;
-				color: #fff;
-			}
-		}
-		button::before {
-	        content: '';
-	        position: absolute;
-	        display: block;
-	        width: 3px;
-	        height: 0;
-	        bottom: 0;
-	        right: 0;
-	        background-color: #e62b4a;
-	        transform: scaleX(0);
-	        transform-origin: top left;
-	        transition: all 0.5s ease;
-		}
-		button::before {
-        	transform: scaleX(1);
-      	}
-	    button:hover::before {
-	        transition: all ease 0.5s;
-	        height: 100%;
-	        background: #e62b4a;
-	    }
-		.Mui-selected {
-			background: #000;
-			color: #fff;
-		}
-		.MuiPaginationItem-previousNext::before {
-	        content: '';
-	        position: absolute;
-	        display: block;
-	        width: 3px;
-	        height: 0;
-	        bottom: 0;
-	        left: 0;
-	        background-color: #e62b4a;
-	        transform: scaleX(0);
-	        transform-origin: top left;
-	        transition: all 0.5s ease;
-		}
-		.MuiPaginationItem-previousNext::before {
-        	transform: scaleX(1);
-      	}
-	    .MuiPaginationItem-previousNext:hover::before {
-	        transition: all ease 0.5s;
-	        height: 100%;
-	        background: #e62b4a;
-	    }
-	    .Mui-disabled::before {
-	   		content: '';
-	        position: absolute;
-	        display: block;
-	        width: 3px;
-	        height: 0;
-	        bottom: 0;
-	        left: 0;
-	        background-color: #e62b4a;
-	        transform: scaleX(0);
-	        transform-origin: top left;
-	        transition: all 0.5s ease;
-	    }
-	    .Mui-disabled::before {
-        	transform: scaleX(1);
-      	}
-	    .Mui-disabled:hover::before {
-	        transition: all ease 0.5s;
-	        height: 100%;
-	        background: #e62b4a;
-	    }
-	}
+  li {
+    button {
+      color: #e62b4a;
+      background: #f4f4f4;
+      border-radius: 3px;
+      border: none;
+      width: 40px;
+      height: 40px;
+      color: #aaaa;
+      transition: all 0.5s ease;
+      position: relative;
+      &:hover {
+        transition: all 0.5s ease;
+        background: #000;
+        color: #fff;
+      }
+    }
+    button::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 3px;
+      height: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #e62b4a;
+      transform: scaleX(0);
+      transform-origin: top left;
+      transition: all 0.5s ease;
+    }
+    button::before {
+      transform: scaleX(1);
+    }
+    button:hover::before {
+      transition: all ease 0.5s;
+      height: 100%;
+      background: #e62b4a;
+    }
+    .Mui-selected {
+      background: #000;
+      color: #fff;
+    }
+    .MuiPaginationItem-previousNext::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 3px;
+      height: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #e62b4a;
+      transform: scaleX(0);
+      transform-origin: top left;
+      transition: all 0.5s ease;
+    }
+    .MuiPaginationItem-previousNext::before {
+      transform: scaleX(1);
+    }
+    .MuiPaginationItem-previousNext:hover::before {
+      transition: all ease 0.5s;
+      height: 100%;
+      background: #e62b4a;
+    }
+    .Mui-disabled::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 3px;
+      height: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #e62b4a;
+      transform: scaleX(0);
+      transform-origin: top left;
+      transition: all 0.5s ease;
+    }
+    .Mui-disabled::before {
+      transform: scaleX(1);
+    }
+    .Mui-disabled:hover::before {
+      transition: all ease 0.5s;
+      height: 100%;
+      background: #e62b4a;
+    }
+  }
 }

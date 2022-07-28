@@ -1,0 +1,115 @@
+.benefits {
+  width: 100%;
+  .benefits__tabs {
+    display: flex;
+    justify-content: center;
+    .benefits__tab {
+      width: 390px;
+      height: 110px;
+      text-align: center;
+      line-height: 110px;
+      background: #f4f4f4;
+      transition: ease-out 0.3s;
+      cursor: pointer;
+      span {
+        font-family: Oswald, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      &:hover {
+        background: #000;
+        color: #fff;
+        transition: ease-out 0.3s;
+      }
+      @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        width: 300px;
+      }
+      @media screen and (min-width: 640px) and (max-width: 768px) {
+        width: 200px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 120px;
+        height: 70px;
+        line-height: 70px;
+        column-gap: 5px;
+        padding: 0 5px;
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .benefits__tab.active-tab {
+    background: #000;
+    color: #fff;
+  }
+  .benefits__items {
+    display: flex;
+    justify-content: center;
+    .benefit__item {
+      width: 1170px;
+      margin-top: 50px;
+      display: flex;
+      column-gap: 50px;
+      .content__section {
+        width: 80%;
+        .desc {
+          color: #818181;
+          letter-spacing: 0.64px;
+          font-size: 16px;
+          font-family: 'Oswald', sans-serif;
+          font-weight: 600;
+          margin-bottom: 1rem;
+          width: 80%;
+        }
+        .all__benefits {
+          .benefit {
+            line-height: 36px;
+            color: #818181;
+            letter-spacing: 0.64px;
+            font-size: 16px;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 600;
+            span {
+              background: #e64c55;
+              color: #fff;
+              font-size: 14px;
+              padding: 7px 10px;
+              border-radius: 2px;
+              max-height: 50%;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+      .img__section {
+        width: 30%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          // background-size: cover;
+        }
+      }
+      @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        padding: 0 50px;
+      }
+      @media screen and(max-width: 768px) {
+        flex-direction: column;
+        padding: 20px;
+        .content__section {
+          width: 100%;
+          width: 100%;
+        }
+        .img__section {
+          margin-top: 20px;
+          width: 100%;
+          max-height: 300px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

@@ -7,9 +7,11 @@ import Img2 from '../../assets/images/about2.jpg';
 //components
 import PagesBanner from '../../components/PagesBanner';
 import AboutAgency from '../../components/AboutAgency';
+import Subscribe from '../../components/Subscibe';
+import WatchVideo from '../../components/WatchVideo';
+import Benefits from '../../components/Benefits';
 
 import './about.scss';
-import Subscribe from '../../components/Subscibe';
 
 const About = () => {
   return (
@@ -20,6 +22,8 @@ const About = () => {
       />
       <AboutAgency />
       <Subscribe />
+      <WatchVideo />
+      <Benefits />
     </div>
   );
 };
