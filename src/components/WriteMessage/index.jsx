@@ -8,6 +8,15 @@ import './writemess.scss';
 const WriteMessage = () => {
   return (
     <div className="write__message">
+      <div className="writemess__section__title">
+        <p className="title">CONTACT WITH US</p>
+        <h1 className="subtitle">WRITE US A MESSAGE</h1>
+        <p className="desc">
+          We are committed to providing our customers with
+          exceptional service while offering our employees
+          the best training.
+        </p>
+      </div>
       <Grid container rowSpacing={3} columnSpacing={3}>
         <Grid item md={6} sm={6} xs={12}>
           <CustomeInput

@@ -5,6 +5,41 @@
   justify-content: center;
   align-items: center;
   row-gap: 20px;
+  .writemess__section {
+    padding: 100px 80px;
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      .title {
+        text-align: center;
+        color: #818181;
+        font-family: Oswald, sans-serif;
+        font-size: 14px;
+      }
+      .subtitle {
+        text-align: center;
+        font-family: Oswald, sans-serif;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+      .desc {
+        font-size: 14px;
+        color: #818181;
+        font-weight: 600;
+        font-family: Oswald, sans-serif;
+        width: 50%;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      padding: 200px 20px;
+    }
+    @media screen and (min-width: 1440px) {
+      padding: 100px 250px;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     padding: 100px 50px;

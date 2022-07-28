@@ -1,0 +1,119 @@
+.address {
+  padding: 50px;
+  .address__section {
+    padding: 100px 80px;
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+      .title {
+        text-align: center;
+        color: #818181;
+        font-family: Oswald, sans-serif;
+        font-size: 14px;
+      }
+      .subtitle {
+        text-align: center;
+        font-family: Oswald, sans-serif;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+      .desc {
+        font-size: 14px;
+        color: #818181;
+        font-weight: 600;
+        font-family: Oswald, sans-serif;
+        width: 50%;
+        text-align: center;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      padding: 200px 20px;
+    }
+    @media screen and (min-width: 1440px) {
+      padding: 100px 250px;
+    }
+  }
+  .address__container {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    .address__item {
+      width: 300px;
+      padding: 30px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      .city {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: 0.8px;
+        margin: 0 0 30px;
+        font-family: Oswald, sans-serif;
+      }
+      .street {
+        color: #818181;
+        letter-spacing: 0.64px;
+        font-size: 16px;
+        font-family: Oswald, sans-serif;
+        font-weight: 400;
+      }
+      .email {
+        color: #818181;
+        letter-spacing: 0.64px;
+        font-size: 16px;
+        font-family: Oswald, sans-serif;
+        font-weight: 400;
+      }
+      .phone {
+        color: #818181;
+        letter-spacing: 0.64px;
+        font-size: 16px;
+        font-family: Oswald, sans-serif;
+        font-weight: 400;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0px;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        background-color: #e62b4a;
+        transform: scaleX(0);
+        transform-origin: top left;
+        transition: all 0.3s ease-in-out;
+      }
+      &::before {
+        transform: scaleX(1);
+      }
+      &:hover::before {
+        transition: all 0.3s ease-in-out;
+
+        width: 3px;
+      }
+      &:hover {
+        transition: all 0.3s ease-in-out;
+
+        background: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px
+          0px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 100px 50px;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 70px 30px;
+  }
+  @media screen and (min-width: 769px) and (max-width: 1440px) {
+    padding: 100px 150px;
+  }
+}

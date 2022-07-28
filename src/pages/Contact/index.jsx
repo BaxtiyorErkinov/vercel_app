@@ -1,6 +1,7 @@
 import React from 'react';
 
 //components
+import Address from '../../components/Address';
 import PagesBanner from '../../components/PagesBanner';
 import WriteMessage from '../../components/WriteMessage';
 
@@ -12,6 +13,7 @@ const Contact = () => {
         pagetitle="CONTACT US"
       />
       <WriteMessage />
+      <Address />
     </div>
   );
 };
