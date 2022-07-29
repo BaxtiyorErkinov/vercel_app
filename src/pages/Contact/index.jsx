@@ -7,7 +7,7 @@ import WriteMessage from '../../components/WriteMessage';
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact_page">
       <PagesBanner
         page="HOME - CONTACT"
         pagetitle="CONTACT US"
