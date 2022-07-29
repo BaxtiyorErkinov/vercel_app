@@ -4,6 +4,7 @@ import Portfolio from '../pages/Portfolio/'
 import Blog from '../pages/Blog/'
 import Contact from '../pages/Contact/'
 import PortfolioDetail from '../pages/Portfolio/PortfolioDetail'
+import BlogDetail from '../pages/Blog/BlogDetail'
 
 export const routes = [
 	{ id: 1, route: "/", element: <Home /> },
@@ -12,4 +13,6 @@ export const routes = [
 	{ id: 4, route: "/portfolio", element: <Portfolio /> },
 	{ id: 5, route: "/portfolio/:id", element: <PortfolioDetail /> },
 	{ id: 6, route: "/blog", element: <Blog /> },
+	{ id: 7, route: "/blog/:id", element: <BlogDetail /> },
+
 ]

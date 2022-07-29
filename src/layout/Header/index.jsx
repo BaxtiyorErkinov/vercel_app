@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 //icons
-import { BsSearch } from 'react-icons/bs';
+import { IoCreateOutline } from 'react-icons/io5';
 import {
   AiOutlineMenu,
   AiOutlineClose,
@@ -89,7 +89,7 @@ const Header = () => {
       <div className="right__section">
         <div className="search-btn">
           <span className="icon">
-            <BsSearch />
+            <IoCreateOutline />
           </span>
         </div>
         <div
