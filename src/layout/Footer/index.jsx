@@ -7,12 +7,14 @@ import {
   AiFillYoutube,
 } from 'react-icons/ai';
 import logo from '../../assets/images/logo.png';
+import BackImg from '../../assets/images/back.jpg'
 
 import './footer.scss';
 
 const Footer = () => {
   return (
     <footer>
+    <img src={BackImg} alt="" className="back"/>
       <div className="footer_wrapper">
         <div className="footer__item about__section">
           <div className="logo">
